@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site sobre o anime Berserk, com informações sobre os personagens, episódios, armas e armaduras de Guts.">
+  <title>Berserk - O Mundo de Guts</title>
+  <link rel="stylesheet" href="./Berserk.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-content">
+      <h1>Berserk</h1>
+      <p>A jornada de Guts através de batalhas sangrentas e sofrimento eterno.</p>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#episodios-favoritos">Episódios</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href onclick="window.open('https://pt.wikipedia.org/wiki/Berserk_(mangá)', '_blank')" target="_blank">Wiki de Berserk</a></li>
+      </ul>
+      <button id="theme-toggle">Alternar Tema</button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section id="inicio" class="banner">
+    <img src="./imagens/guts x griffith 2.jpg" alt="Banner do Anime Berserk">
+  </section>
+
+  <!-- Introdução ao Anime -->
+  <section id="introducao" class="introducao">
+    <h2>Sobre o Anime</h2>
+    <p>
+      *Berserk* é uma série de anime e mangá que segue a história de Guts, um guerreiro solitário marcado por um destino trágico. O anime explora temas profundos como amizade, vingança e sacrifício, com uma atmosfera sombria e intensa, ambientada em um mundo medieval repleto de demônios, monstros e batalhas épicas. Guts é guiado pela fúria e pelo desejo de vingança após ser traído por seu antigo amigo e líder, Griffith. Sua jornada é marcada por lutas brutais e desafios que testam sua resistência física e emocional.
+    </p>
+  </section>
+
+  <!-- Seção dos Episódios Favoritos -->
+  <section id="episodios-favoritos">
+    <h2>Episódios Favoritos</h2>
+    <div class="episodios">
+      <div class="episodio">
+        <h3>Episódio 1: O Espadachim Negro</h3>
+        <img src="./imagens/espadachin negro.jpg" alt="Episódio 1">
+        <p>Guts enfrenta batalhas mortais enquanto foge da ameaça de um eclipse maligno.</p>
+      </div>
+      <div class="episodio">
+        <h3>Episódio 2: Nosferatu Zodd</h3>
+        <img src="./imagens/zodd.webp" alt="Episódio 2">
+        <p>Guts enfrenta nosferatu zodd ao lado de seu lider griffith.</p>
+        <button onclick="window.open('https://www.youtube.com/watch?v=H6dkuEdzaFY', '_blank')">Assistir Trailer</button>
+      </div>
+      <div class="episodio">
+        <h3>Episódio 11: O Eclipse</h3>
+        <img src="./imagens/eclipse.jpg" alt="Episódio 3">
+        <p>A história do Sacrifício de Guts ganha profundidade, trazendo revelações sombrias.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Dragon Slayer e Berserk Armor -->
+  <section class="weapons-armor">
+    <h2>Dragon Slayer e Berserk Armor</h2>
+    <div class="content">
+      <div class="weapon">
+        <h3>Dragon Slayer</h3>
+        <img src="./imagens/dragon slayer.jpg" alt="Espada Dragon Slayer">
+        <p>A lendária espada *Dragon Slayer*, criada pelo ferreiro Godo, é uma arma imensa e robusta, projetada originalmente para matar dragões.</p>
+      </div>
+      <div class="armor">
+        <h3>Berserk Armor</h3>
+        <img src="./imagens/berserk armor1.webp" alt="Berserk Armor">
+        <p>A *Berserk Armor* amplifica a força de Guts ao custo de sua sanidade, colocando-o em um estado de frenesi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Personagens -->
+  <section id="galeria" class="galeria">
+    <h2>Galeria de Personagens</h2>
+    <div class="personagens">
+      <div class="personagem">
+        <img src="./imagens/guts1.jpg" alt="Guts">
+        <h3>Guts</h3>
+        <p>O protagonista da série, Guts é um espadachim habilidoso com um destino marcado por sangue e vingança.</p>
+        <a href="https://berserk.fandom.com/pt-br/wiki/Guts">Ver Detalhes</a>
+      </div>
+      <div class="personagem">
+        <img src="./imagens/griffith.jpg" alt="Griffith">
+        <h3>Griffith</h3>
+        <p>O carismático líder da Falcon of the Millenium, com um destino traiçoeiro e sombrio.</p>
+        <a href="https://berserk.fandom.com/pt-br/wiki/Griffith">Ver Detalhes</a>
+      </div>
+      <div class="personagem">
+        <img src="./imagens/casca1.jpg" alt="Casca">
+        <h3>Casca</h3>
+        <p>Companheira de Guts, que compartilha uma jornada cheia de dor e sacrifícios.</p>
+        <a href="https://berserk.fandom.com/pt-br/wiki/Casca">Ver Detalhes</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Seção de Contato -->
+<section id="contato">
+    <h2>Contato</h2>
+    <form id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+  
+  <!-- Pop-up de sucesso -->
+  <div id="success-popup" class="popup">
+    <div class="popup-content">
+      <p>Parabéns, agora você foi marcado pelo estigma!</p>
+      <button onclick="closePopup()">Fechar</button>
+    </div>
+  </div>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Site Berserk. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./Berserk.js"></script>
+</body>
+</html>
