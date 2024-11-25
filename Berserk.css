@@ -1,7 +1,7 @@
-/* Estilos do site */
+
 :root {
     --primary-color: #ef4643;
-    --secondary-color: #ac9930; /* Dourado */
+    --secondary-color: #ac9930; 
     --accent-color: #f1faee;
     --light-color: #fff;
     --dark-color: #501515;
@@ -61,14 +61,12 @@
     background: var(--accent-color);
   }
   
-  /* Banner */
   .banner img {
     width: 100%;
     height: auto;
     border-bottom: 5px solid var(--secondary-color);
   }
   
-  /* Introdução */
   .introducao {
     padding: 40px;
     text-align: center;
@@ -85,7 +83,6 @@
     margin-top: 20px;
   }
   
-  /* Episódios */
   .episodios {
     display: flex;
     justify-content: space-around;
@@ -121,7 +118,6 @@
     background-color: var(--accent-color);
   }
   
-  /* Weapons and Armor Section */
   .weapons-armor {
     display: flex;
     justify-content: space-around;
@@ -147,7 +143,6 @@
     margin-bottom: 15px;
   }
   
-  /* Galeria */
   .galeria {
     padding: 40px;
     text-align: center;
@@ -188,7 +183,6 @@
     text-decoration: underline;
   }
   
-  /* Contato */
   #contato {
     padding: 40px;
     text-align: center;
@@ -234,7 +228,6 @@
     color: var(--light-color);
     border-top: 2px solid var(--secondary-color);
   }
-  /* Estilo do Pop-up */
 .popup {
     display: none;
     position: fixed;
@@ -269,7 +262,6 @@
   .popup button:hover {
     background-color: var(--accent-color);
   }
-  /* Tema Escuro */
 body.dark-theme {
     background-color: #121212;
     color: var(--light-color);
