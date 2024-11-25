@@ -283,16 +283,16 @@ body.dark-theme {
     background-color: #444;
   }
   #theme-toggle {
-    background-color: #000; /* Cor de fundo padrão */
-    color: #fff; /* Cor do texto padrão */
+    background-color: #000; 
+    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 #theme-toggle:hover {
-    background-color: #444; /* Cor de fundo ao passar o mouse */
-    color: #ff0; /* Cor do texto ao passar o mouse */
+    background-color: #444; 
+    color: #ff0; 
 }
